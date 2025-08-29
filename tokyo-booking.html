@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokyo Explorer Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    .success-message {
+      color: green;
+      font-size: 20px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .btn {
+      background-color: crimson;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tokyo Explorer Booking</h1>
+  <h2>Book Your Tokyo Adventure</h2>
+
+  <form id="tokyoForm">
+    <label>Full Name: <input type="text" id="name" required></label>
+    <label>Email: <input type="email" id="email" required></label>
+    <label>Travel Date: <input type="date" id="date" required></label>
+    <label>Number of Guests: <input type="number" id="guests" min="1" required></label>
+    <button type="submit" class="btn">Confirm Booking</button>
+  </form>
+
+
+  <div id="tokyoSuccess" class="success-message">
+    ✅ Tokyo Booking Confirmed! 🗼 Have a great trip 🎌
+  </div>
+
+  <script>
+    document.getElementById("tokyoForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      document.getElementById("tokyoSuccess").style.display = "block"; 
+      document.getElementById("tokyoForm").reset(); 
+    });
+  </script>
+</body>
+</html>

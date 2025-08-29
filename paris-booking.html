@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paris Getaway Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    .success-message {
+      color: green;
+      font-size: 20px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .btn {
+      background-color: orange;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Paris Getaway - Booking</h1>
+  <h2>Book Your Trip</h2>
+
+  <form id="bookingForm">
+    <label>Full Name: <input type="text" id="name" required></label>
+    <label>Email: <input type="email" id="email" required></label>
+    <label>Select Date: <input type="date" id="date" required></label>
+    <label>Number of Guests: <input type="number" id="guests" min="1" required></label>
+    <button type="submit" class="btn">Confirm Booking</button>
+  </form>
+
+ 
+  <div id="successMessage" class="success-message">
+    ✅ Booking Confirmed! Enjoy your trip ✈️
+  </div>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      document.getElementById("successMessage").style.display = "block"; 
+      document.getElementById("bookingForm").reset(); 
+    });
+  </script>
+</body>
+</html>
