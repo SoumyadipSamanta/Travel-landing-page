@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Results - TravelX</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .results-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .flight-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      background: #fdfdfd;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .flight-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .flight-card h3 {
+      margin: 0 0 10px;
+      color: navy;
+    }
+    .flight-card p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 15px;
+      background: navy;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">TravelX</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="index.html#services" class="active">Services</a></li>
+        <li><a href="index.html#newsletter">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="results-container">
+    <h2>Available Flights</h2>
+
+    <div class="flight-card">
+      <h3>✈ AirX Airlines</h3>
+      <p>Departure: 10:00 AM | Arrival: 2:00 PM</p>
+      <p>Price: $450</p>
+      <a href="flight-booking-confirm.html?airline=AirX Airlines&price=$450" class="btn">Book Now</a>
+    </div>
+
+    <div class="flight-card">
+      <h3>✈ SkyJet Airways</h3>
+      <p>Departure: 1:00 PM | Arrival: 5:30 PM</p>
+      <p>Price: $500</p>
+      <a href="flight-booking-confirm.html?airline=SkyJet Airways&price=$500" class="btn">Book Now</a>
+    </div>
+
+    <div class="flight-card">
+      <h3>✈ FlyHigh Express</h3>
+      <p>Departure: 6:30 PM | Arrival: 11:00 PM</p>
+      <p>Price: $420</p>
+      <a href="flight-booking-confirm.html?airline=FlyHigh Express&price=$420" class="btn">Book Now</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 TravelX. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

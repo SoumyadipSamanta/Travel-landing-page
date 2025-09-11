@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmation - TravelX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fc;
+      margin: 0;
+      padding: 0;
+    }
+    .confirmation-container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      color: #333;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-container">
+    <h2>✅ Booking Confirmed!</h2>
+    <p id="hotel-name">Thank you for booking with TravelX.</p>
+    <p>We’re excited to host you. Your booking details will be sent to your email.</p>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <script>
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const hotel = urlParams.get("hotel");
+
+    if (hotel) {
+      document.getElementById("hotel-name").innerText =
+        "You have successfully booked: " + hotel;
+    }
+  </script>
+</body>
+</html>

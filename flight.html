@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking - TravelX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">TravelX</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="index.html#services" class="active">Services</a></li>
+        <li><a href="index.html#newsletter">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <section class="booking">
+  <h2>Flight Booking</h2>
+  <div class="booking-container">
+    <div class="booking-image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-CZtuUKuKMDpZv7zFiXngxSQqk7etAJM2uQ&s" alt="Flight Booking">
+    </div>
+    
+    <div class="booking-form">
+      <p>Book your flights easily and get exclusive deals!</p>
+  
+      <form action="flights-results.html" method="GET">
+        <label>From:</label>
+        <input type="text" name="from" placeholder="Enter departure city" required>
+        
+        <label>To:</label>
+        <input type="text" name="to" placeholder="Enter destination city" required>
+        
+        <label>Date:</label>
+        <input type="date" name="date" required>
+        
+        <label>Passengers:</label>
+        <input type="number" name="passengers" min="1" value="1" required>
+        
+        <button type="submit" class="btn">Search Flights</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 TravelX. All rights reserved.</p>
+  </footer>
+</body>
+</html>

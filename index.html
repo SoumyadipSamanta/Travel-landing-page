@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ 
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(0, 150, 136, 0.9); 
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #ffd700; 
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/source/54e3e877204955.5c80b796ccbe7.gif" alt="TravelX Logo">
+        TravelX
+      </h1>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#newsletter">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Explore the World with Us</h2>
+      <p>Discover amazing places at exclusive deals. Your adventure starts here.</p>
+      <a href="getstarted.html" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <a href="flight.html" class="service card-link">
+        <h3>Flight Booking</h3>
+        <p>Get the best deals on flights around the world.</p>
+      </a>
+      <a href="hotel.html" class="service card-link">
+        <h3>Hotel Booking</h3>
+        <p>Book affordable and luxury hotels with ease.</p>
+      </a>
+      <a href="packages.html" class="service card-link">
+        <h3>Tour Packages</h3>
+        <p>Choose from curated packages for your dream vacation.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get the latest travel deals straight to your inbox!</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TravelX. All rights reserved.</p>
+    <p>THANK YOU</p>
+    <p>Contact us: Soumyadip Samanta</p>
+    <p>Phone no-7865082103</p>
+    <p>Email - sousamanta01@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
